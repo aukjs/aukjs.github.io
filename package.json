@@ -1,0 +1,15 @@
+{
+  "name": "auk-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docsify serve ./docs"
+  },
+  "author": "jiangqiang",
+  "license": "ISC",
+  "devDependencies": {
+    "docsify": "^4.11.6"
+  }
+  
+}
