@@ -1,6 +1,6 @@
 
 
-# Saxony.js <small>0.1</small>
+# Bizic.js <small>0.1</small>
 
 > 一个聚焦业务逻辑的轻量级前端框架
 
@@ -8,5 +8,5 @@
 - 基于 DI，解耦视图逻辑和业务逻辑
 <!-- - 为你的项目逻辑组织提供强有力的支撑 -->
 
-[GitHub](https://github.com/saxonyjs/saxony/)
+[GitHub](https://github.com/bizic/bizic/)
 [Get Started](/guide/introduction)

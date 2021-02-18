@@ -3,6 +3,6 @@
 ## npm
 
 ```shell
-npm i saxony saxony-vue
+npm i bizic bizic-vue
 
 ```

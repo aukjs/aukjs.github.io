@@ -1,3 +1,3 @@
-# Saxony.js
+# Bizic.js
 
-> TODO
+> bizic docs repo
