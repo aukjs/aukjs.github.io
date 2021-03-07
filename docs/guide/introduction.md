@@ -10,12 +10,62 @@ bizic.js（business logic 的缩写）是一个基于DI的轻量级前端框架�
 ### **Vue 3.x**
 
 ####  main.js
-[main.js](https://raw.githubusercontent.com/bizic/examples/master/packages/vue3-simple/src/main.js ':include :type=code')
+
+```js
+import { createApp } from 'vue';
+import Bizic from 'bizic';
+import { withRootProvider } from 'bizic-vue';
+import App from './App.vue';
+
+const bizic = new Bizic();
+
+// 注册 service
+bizic.registerServiceFactory('foo', () => ({ bar: 'Welcome to Your Bizic.js App' }));
+
+const AppWithProvider = withRootProvider(App, bizic);
+const app = createApp(AppWithProvider);
+
+app.mount('#app');
+```
 
 我们通过 `bizic.registerServiceFactory('foo', () => ({ bar: 'Welcome to Your Bizic.js App' }))` 注册了一个 service 的工厂函数。
 
 #### App.vue
-[App.vue](https://raw.githubusercontent.com/bizic/examples/master/packages/vue3-simple/src/App.vue ':include :type=code')
+
+```vue
+<template>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld :msg="foo.bar"/>
+</template>
+
+<script>
+import { useService } from 'bizic-vue';
+import HelloWorld from './components/HelloWorld.vue';
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+  },
+  setup() {
+    // 使用 service
+    const foo = useService('foo');
+    return { foo };
+  },
+};
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+```
 
 通过 `useService('foo');`，在组件中可以使用 service。
 
@@ -24,7 +74,7 @@ bizic.js（business logic 的缩写）是一个基于DI的轻量级前端框架�
 
 ### **Vue 2.x**
 
- ?> TODO
+?> TODO
 
 <!-- tabs:end -->
 

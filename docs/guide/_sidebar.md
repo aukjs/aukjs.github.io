@@ -1,9 +1,10 @@
 - **基础**
   - [介绍](/guide/introduction.md)
   - [安装](/guide/installation.md)
-  - [快速开始]()
+  <!-- - [快速开始]() -->
 - **主要概念**
-  - [理解 Service](/guide/service.md)
-  - [Reactivity]()
+  - [Provider](/guide/provider.md)
+  - [Service](/guide/service.md)
+  - [Reactivity](/guide/reactivity.md)
 - **最佳实践**
-  - [代码组织]()
+  - [代码组织](/guide/)
