@@ -78,6 +78,3 @@ export default {
 
 <!-- tabs:end -->
 
-## 设计动机
-
-### 前端代码的组织方式

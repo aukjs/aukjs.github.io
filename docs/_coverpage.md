@@ -9,4 +9,4 @@
 <!-- - 为你的项目逻辑组织提供强有力的支撑 -->
 
 [GitHub](https://github.com/bizic/bizic/)
-[Get Started](/guide/introduction)
+[Get Started](/guide/base/introduction)

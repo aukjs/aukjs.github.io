@@ -1,10 +1,11 @@
 - **基础**
-  - [介绍](/guide/introduction.md)
-  - [安装](/guide/installation.md)
+  - [介绍](/guide/base/introduction.md)
+  - [安装](/guide/base/installation.md)
+  - [设计动机](/guide/base/motivation.md)
   <!-- - [快速开始]() -->
 - **主要概念**
-  - [Provider](/guide/provider.md)
-  - [Service](/guide/service.md)
-  - [Reactivity](/guide/reactivity.md)
+  - [Provider](/guide/concepts/provider.md)
+  - [Service](/guide/concepts/service.md)
+  - [Reactivity](/guide/concepts/reactivity.md)
 - **最佳实践**
-  - [代码组织](/guide/)
+  - [代码组织](/guide/tips&tricks/code.md)
