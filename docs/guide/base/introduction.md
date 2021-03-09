@@ -70,7 +70,7 @@ export default {
 通过 `useService('foo');`，在组件中可以使用 service。
 
 #### 完整示例
-[ bizic 在线示例](https://codesandbox.io/s/github/bizic/examples/tree/master/packages/vue3-simple)
+[ bizic 在线示例](https://codesandbox.io/s/github/bizic/examples/tree/master/packages/vue3-router-reactivity)
 
 ### **Vue 2.x**
 
