@@ -1,10 +1,18 @@
 # Provider
 
-通过 Provider，可以将 Service 提供给有需求的逻辑代码模块（组件、另一个 Service 等）。在 bizic.js 中，我们将 Provider 分为了两类：
+ Provider 可以理解为 Service 实例的持有容器，通过 Provider，可以将 Service 提供给有需求的逻辑代码模块（组件、另一个 Service 等）。在 bizic.js 中，我们将 Provider 分为了两类：
+
 - Root Provider，即根 Provider。
 - Scoped Provider，即局部 Provider。
 
 Provider 实际使用中，会依附组件树，形成一个由 Root Provider 为根节点的 Provider Tree.
+
+![Provider Tree](_media/provider.drawio.svg )
+
+Provider 依附于组件树，所以每个 Provider 的生命周期，也跟其对应的组件生命周期保持一致。已上图为例，如
+
+-  当 App Component 创建时，Root Provider 和 Scoped Provider 也会创建，当 App Component 销毁时，这两个 Provider 也会被销毁。
+-  当 ModuleA Component 创建时，ModuleA Scoped Provider 也会创建，当 ModuleA Component 销毁时，ModuleA Scoped Provider 也会被销毁。
 
 ## Root Provider
 
