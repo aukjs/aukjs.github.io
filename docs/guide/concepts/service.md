@@ -2,6 +2,10 @@
 
 在 bizic.js 中，Service 是一个很宽泛的定义，一段业务逻辑、一个日志工具方法，都可以作为一个 Service。
 
+在整个 bizic.js 中，Service 与 Provider 的关系大概如下：
+
+![Provider Tree](_media/service.drawio.svg )
+
 ## 注册 Service
 
 在使用过程中，我们需要提前注册 Service，注册 Service 的方式就是提供一个 Service Factory。bizic.js 会根据 Service 的使用时机，通过 Service Factory 创建一个 Service 实例。
@@ -98,6 +102,9 @@ Service 主要包含一下三种类型：
 
 ## 使用 Service
 
+我们可以在一个组件中使用 service，也可以在一个 service 中使用另一个 service
+
+### 组件中
 在组件中，可以通过 `useService(serviceName)`，如：
 
 ```vue
@@ -121,7 +128,7 @@ export default {
 };
 </script>
 ```
-
+### Service 中
 在 Service 中，通过 `inject(serviceName)` 注入依赖的 Service 示例，如
 
 ```js
@@ -139,3 +146,21 @@ export default class AboutStore extends Observable {
   }
 }
 ```
+
+### Service 的依赖关系
+
+**Root Service:** 
+1. 一个 `Root Service` 可以依赖另一个 `Root Service`;
+2. 不能形成循环依赖；
+
+**Scoped Service:**
+1. `Scoped Service` 可以依赖 `Root Service`；
+2. 一个 `Scoped Service` 可以依赖同一个 Scoped 下的另一个 `Scoped Service`；
+3. `Scoped Service` 间不能形成循环依赖；
+
+**Shared Service:**
+1. `Shared Service` 可以依赖 `Root Service`；
+
+### Service 的生命周期
+
+`Service` 的生命周期与对应的 `Provider` 保持一致，在第一次使用时被实例化，在同一个 `Provider` 中是单例的，跟随 `Provider` 的销毁而销毁。
