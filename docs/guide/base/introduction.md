@@ -2,7 +2,15 @@
 
 ## Bizic.js 是什么
 
-bizic.js（business logic 的缩写）是一个基于 DI (Dependency Injection，依赖注入)的轻量级前端框架，专注于业务逻辑。解构视图逻辑和业务了逻辑，为你的项目逻辑组织提供更有力的支撑。
+bizic.js（business logic 的缩写）是一个基于 DI (Dependency Injection，依赖注入)的轻量级前端应用框架，专注于业务。
+
+bizic 抽象了 service 的概念，通过将业务逻辑和一些其他非视图逻辑抽离到 service 中，可以很好的解耦视图逻辑和业务逻辑，为实现一个清晰可控的业务架构提供有力的支撑。
+
+一个使用了 bizic 的应用可以简化如下所示：
+
+![Provider Tree](_media/service.drawio.svg ':class=img-center')
+
+当然，bizic 的功能远不止于此，跟多的功能请看后续文档。
 
 ## 示例
 
