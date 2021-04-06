@@ -7,7 +7,7 @@
 
 Provider 实际使用中，会依附组件树，形成一个由 Root Provider 为根节点的 Provider Tree.
 
-![Provider Tree](_media/provider.drawio.svg )
+![Provider Tree](_media/provider.drawio.svg ':class=img-center')
 
 Provider 依附于组件树，所以每个 Provider 的生命周期，也跟其对应的组件生命周期保持一致。已上图为例，如
 

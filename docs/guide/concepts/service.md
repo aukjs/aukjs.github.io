@@ -4,7 +4,7 @@
 
 在整个 bizic.js 中，Service 与 Provider 的关系大概如下：
 
-![Provider Tree](_media/service.drawio.svg )
+![Provider Tree](_media/service.drawio.svg ':class=img-center')
 
 ## 注册 Service
 
