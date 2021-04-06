@@ -2,7 +2,7 @@
 
 ## Bizic.js 是什么
 
-bizic.js（business logic 的缩写）是一个基于DI的轻量级前端框架，专注于业务逻辑。解构视图逻辑和业务了逻辑，为你的项目逻辑组织提供更有力的支撑。
+bizic.js（business logic 的缩写）是一个基于 DI (Dependency Injection，依赖注入)的轻量级前端框架，专注于业务逻辑。解构视图逻辑和业务了逻辑，为你的项目逻辑组织提供更有力的支撑。
 
 ## 示例
 
