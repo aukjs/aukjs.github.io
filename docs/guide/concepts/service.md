@@ -26,7 +26,7 @@ function loggerFactory() {
 bizic.registerServiceFactory('logger', loggerFactory);
 ```
 
-也可以是一个实现了 `create` 静态方法的工具类，如：
+也可以是一个实现了 `create` 静态方法的构造函数，如：
 
 ```js
 
@@ -44,7 +44,7 @@ bizic.registerServiceFactory('logger', loggerFactory);
 
 ```
 
-其中，bizic.js 提供了一个 `Service` 基类，如下：
+其中，bizic.js 提供了一个 `Service` 基类，实现了 `create` 静态方法，如下：
 
 ```js 
 import { Service } from 'bizic';
@@ -56,7 +56,7 @@ export default class Logger extends Service {
 }
 
 // 注册 Service
-bizic.registerServiceFactory('logger', loggerFactory);
+bizic.registerServiceFactory('logger', Logger);
 
 ```
 
