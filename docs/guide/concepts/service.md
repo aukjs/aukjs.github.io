@@ -146,6 +146,7 @@ export default class AboutStore extends Observable {
   }
 }
 ```
+!> 注意：`inject()` 只能在构造函数或者静态属性声明赋值时使用。
 
 ### Service 的依赖关系
 
