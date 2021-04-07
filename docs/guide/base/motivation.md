@@ -18,4 +18,5 @@
 
 我们一直从状态和视图的角度，来思考前端逻辑的组织方式，换一个角度，我们如果首先将逻辑划分模块，在模块基础上拆分视图逻辑和业务逻辑，整个组织方式就会清晰很多。
 bizic 抽象 service 的概念，可以将业务逻辑抽离到 service，让视图框架专注于视图逻辑。如下所示：
+
 ![Provider Tree](_media/bizic.drawio.svg ':class=img-center')
